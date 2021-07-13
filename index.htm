@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LLA to XYZ</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div>
+			<div>
+				<label for="latitude">Latitude</label>
+				<input type="text" id="latitude" value="51.48165" />N
+			</div>
+			<div>
+				<label for="longitude">Longitude</label>
+				<input type="text" id="longitude" value="7.21648" />E
+			</div>
+			<div>
+				<label for="altitude">Altitude</label>
+				<input type="text" id="altitude" value="0" />m
+			</div>
+			<div>
+				<button onclick="do_toXyz()">LLA to XYZ</button>
+			</div>
+		</div>
+		<div>
+			<div>
+				<label for="x">X</label>
+				<input type="text" id="x" value="3948717.003794268" />m
+			</div>
+			<div>
+				<label for="y">Y</label>
+				<input type="text" id="y" value="499992.90310023166" />m
+			</div>
+			<div>
+				<label for="z">Z</label>
+				<input type="text" id="z" value="4967091.289249117" />m
+			</div>
+			<div>
+				<button onclick="do_toLla()">XYZ to LLA</button>
+			</div>
+		</div>
+	</body>
+</html>
+

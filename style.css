@@ -1,0 +1,28 @@
+body {
+	margin: 5% 25%;
+}
+
+body>div {
+	border: .2em solid #888;
+	padding: .5em 1em;
+	margin: .5em;
+	border-radius: 1em;
+}
+
+label {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+input {
+	max-width: 12em;
+	text-align: right;
+	margin-bottom: .5em;
+}
+
+button {
+	padding: .5em;
+	width: 100%;
+}
+
