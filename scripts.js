@@ -53,9 +53,9 @@ function toLla(ellipsoid, x, y, z) {
 }
 
 function do_toXyz() {
-	const latitude = Number(document.getElementById("latitude").value) * D2R;
-	const longitude = Number(document.getElementById("longitude").value) * D2R;
-	const altitude = Number(document.getElementById("altitude").value);
+	const latitude = document.getElementById("latitude").valueAsNumber * D2R;
+	const longitude = document.getElementById("longitude").valueAsNumber * D2R;
+	const altitude = document.getElementById("altitude").valueAsNumber;
 	const [x, y, z] = toXyz(WGS84, latitude, longitude, altitude);
 
 	document.getElementById("x").value = x;
@@ -64,9 +64,9 @@ function do_toXyz() {
 }
 
 function do_toLla() {
-	const x = Number(document.getElementById("x").value);
-	const y = Number(document.getElementById("y").value);
-	const z = Number(document.getElementById("z").value);
+	const x = document.getElementById("x").valueAsNumber;
+	const y = document.getElementById("y").valueAsNumber;
+	const z = document.getElementById("z").valueAsNumber;
 	const [latitude, longitude, altitude] = toLla(WGS84, x, y, z);
 
 	document.getElementById("latitude").value = latitude * R2D;

@@ -10,36 +10,38 @@
 	<body>
 		<div>
 			<div>
-				<label for="latitude">Latitude</label>
-				<input type="text" id="latitude" value="51.48165" />N
+				<div>
+					<label for="latitude">Latitude</label>
+					<input type="number" id="latitude" value="51.48165" step="any" /> N
+				</div>
+				<div>
+					<label for="longitude">Longitude</label>
+					<input type="number" id="longitude" value="7.21648" step="any" /> E
+				</div>
+				<div>
+					<label for="altitude">Altitude</label>
+					<input type="number" id="altitude" value="0" step="any" /> m
+				</div>
+				<div>
+					<button onclick="do_toXyz()">LLA to XYZ</button>
+				</div>
 			</div>
 			<div>
-				<label for="longitude">Longitude</label>
-				<input type="text" id="longitude" value="7.21648" />E
-			</div>
-			<div>
-				<label for="altitude">Altitude</label>
-				<input type="text" id="altitude" value="0" />m
-			</div>
-			<div>
-				<button onclick="do_toXyz()">LLA to XYZ</button>
-			</div>
-		</div>
-		<div>
-			<div>
-				<label for="x">X</label>
-				<input type="text" id="x" value="3948717.003794268" />m
-			</div>
-			<div>
-				<label for="y">Y</label>
-				<input type="text" id="y" value="499992.90310023166" />m
-			</div>
-			<div>
-				<label for="z">Z</label>
-				<input type="text" id="z" value="4967091.289249117" />m
-			</div>
-			<div>
-				<button onclick="do_toLla()">XYZ to LLA</button>
+				<div>
+					<label for="x">X</label>
+					<input type="number" id="x" value="3948717.003794268" step="any" /> m
+				</div>
+				<div>
+					<label for="y">Y</label>
+					<input type="number" id="y" value="499992.90310023166" step="any" /> m
+				</div>
+				<div>
+					<label for="z">Z</label>
+					<input type="number" id="z" value="4967091.289249117" step="any" /> m
+				</div>
+				<div>
+					<button onclick="do_toLla()">XYZ to LLA</button>
+				</div>
 			</div>
 		</div>
 	</body>
